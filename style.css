@@ -1,0 +1,415 @@
+/* Configuração corpo da página*/
+html, body {
+    margin:0;
+}
+
+/*Configuração do MENU*/
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10; /*elemento mais externo a ser exibido*/
+    background-color:black;
+}
+header #logo {
+    float: left;
+    height: 2.8rem;
+    width: 2.8rem;
+    position: absolute; 
+    margin-top: .5rem;
+    margin-left: 1.5%;
+    max-height: 100%;
+}
+header #menu {
+    float: right;
+    margin-top: .3%; 
+    list-style: none;/*retira as bolinhas do menu*/    
+}
+header li  {
+    margin-right: .8rem;
+    padding: 1.2rem 0.5rem;
+    font-size: .85rem;
+    justify-items: center;
+    cursor: pointer;
+}
+header #listamenu {
+    font-family: 'Roboto', sans-serif;
+    float: left; /*posicionar os itens do menu lateralmente*/
+    text-decoration: none;
+    color:white;
+}
+
+header li:hover  {/*Estilização da lista do menu*/
+    margin-top: 0;
+    padding: 1.2rem 1rem;
+    transition: initial .4s linear;
+    background-color:#ffb482 ;
+}
+
+/*Configuração da MENU LATERAL RESPONSIVO*/
+label {
+    visibility: hidden;
+}
+#check {
+    display: none;
+}
+#menuhamburguer{
+    visibility: hidden;
+}
+
+/*Configuração da CAPA*/
+#website-cover {
+    background: url("img/csn_revista_mineracao.jpg");
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+h1 {
+    padding-top: 15%;
+    margin-block-end: 1.5rem;
+    margin-top: 0;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    line-height: 2.8rem;
+
+    color: whitesmoke;
+    text-shadow: 1.5px 1px black;
+    text-align: center;
+    
+}
+ #artigo {
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    border: 1px whitesmoke solid;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+/*Configurações que se repetem nas seções do site*/
+h3 { /*Titulo*/ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.35rem;
+    text-align: center;
+} 
+hr { /*Sublinhado das seções*/
+    width: 30px;
+}
+h4 { /*Titulo*/ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    text-align: center;
+   
+}
+h5 { /*Titulo*/ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+figure { /*imagens*/
+    margin:0;
+}
+.img-mining { /*imagens*/
+    width: 100%;    
+    margin: 1rem auto;
+    padding:0.5rem;
+}
+figcaption { /*fonte das imagens*/
+    text-align: left;
+}
+#font { /*fonte das imagens*/
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+    line-height: 12px;
+}
+section { /*seções*/
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 20px 0;
+    border:0;
+}
+.colunm-two, .colunm-four, .colunm-five { /*configuração das colunas*/
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.colunm-two { /*configuração das colunas que são duplas*/
+    width: 40%;
+}
+.colunm-four { /*configuração das colunas que são quadruplas*/
+    width: 15%;
+}
+.colunm-five {
+    width: 9.5%;
+}
+.justify { /*configuração das colunas*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: justify;
+}
+.center { /*configuração das colunas*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: center;
+}
+.margin{
+    border-left: 2.9vw black solid; 
+    border-right: 2.9vw black solid;   
+  }
+
+/*Configuração das seções*/
+#the-project, #understand-more {
+    padding: 0 5%;
+}
+ #barragem, #tests, #sismics, #about-we  {
+    padding: 10px;
+    
+    text-align: center; 
+    border-bottom:0;
+}
+
+/*Configuração dos icones da seção: RECICLAGEM DE ELETRÔNICOS*/
+.icon {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    margin: O auto;
+}
+.colunm-four:hover > .icon {
+    background:black;
+  }
+.center-text-recycle{
+    margin:8px;
+}
+
+/* Configuração da seção: TESTES */  
+/*tabela*/
+  #table {
+    margin: auto;
+    border:.1rem black solid; 
+  }
+  td {
+      border: .1rem black solid;
+      text-align: center;
+  }
+/*Fotos sobre nós*/
+.img-about-we {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: O auto;
+}
+.about-we-title { 
+    justify-content: center;
+    margin:0.4rem;
+}
+.about-we-text{
+    margin:0.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: center;
+}
+/* Configuração do RODA PÉ*/
+footer {
+    width:auto; 
+    background-color:#636e72;
+    float: left;
+    color: whitesmoke;
+    padding: 0 30px 0 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer h4 {
+    color:whitesmoke;
+    text-align:left;
+}
+
+.data {
+    text-align:right;
+    font-size: .8rem;
+} 
+
+/* Configuração  da responsividade do site: TABLET*/
+@media all and (max-width:800px) {
+    #menu {
+        visibility: hidden; /*esconde o menu do cabeçalho desktop*/
+    }
+    /*mostra o menu hamburger no cabeçalho*/
+    label {
+        visibility: visible;
+        position: absolute;
+        text-align: left;
+        cursor: pointer;
+        margin: 2%;
+        z-index: 11;
+        transition: all .2s linear;
+    }
+    .hamburguer {
+        position:fixed;
+        display:block;
+        background:white;
+        width: 25px;
+        height: 2px;
+        top: 1.9rem;
+        left: 1rem;
+        transition: .5s ease-int-out;
+    }
+    
+    .hamburguer:before, .hamburguer:after {
+        background: white;
+        position:absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .5s ease-int-out;
+    }
+    .hamburguer:before {
+        top:-10px;
+    }
+    .hamburguer:after {
+        bottom:-10px;
+    }
+    #menuhamburguer {
+        visibility: visible;
+        box-sizing: border-box;
+        margin: 3.75rem 0rem;
+        height: 45vh;
+        width: 50vw;
+        left: -50vw;
+        background-color: lightgray;
+        position: fixed;
+        transition: all .3s linear;
+        z-index:11;
+    }
+    #menuhamburguer a {
+        display: block;
+        text-decoration: none;
+        padding: 7% 5%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12pt;
+        color: white;
+        background-color:black;
+        border-bottom: 0.1rem white solid;
+        opacity: 0;
+        transition: all .4s linear;
+    }
+    #check:checked ~ #menuhamburguer {
+        transform: translateX(50vw);
+    }
+    #check:checked ~ #menuhamburguer a {
+        opacity: 1;
+        margin-top: 0;
+    }
+    #menuhamburguer a:hover {
+        background-color:#ffb482 ;
+        padding: 7% 5% 7% 10%;
+    }
+    input:checked ~ label .hamburguer { /*Estilização do x das barras do menu hamburguer*/
+        transform: rotate(45deg);
+    }
+        
+    input:checked ~ label .hamburguer:before {
+        transform: rotate(90deg);
+        top:0;
+    }
+    input:checked ~ label .hamburguer:after {
+        transform: rotate(90deg);
+        bottom:0;
+    }
+    .colunm-two, .colunm-four, .colunm-five{/*organização das colunas*/
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 13px auto;
+        float: none;
+    }
+    header #logo {
+        margin-left:0;
+        transform: translatex(-50%) /*movimentando no eixo x para centralizar a logo*/
+    }
+    #logodiv {
+        width: 100%;
+        position:relative;
+        text-align:center;
+    }
+
+    .img-about-me {
+        width: 85%;
+        margin: 2rem auto;
+    }
+}
+
+/* Configuração  da responsividade do site: CELULAR*/
+@media all and (max-width:450px) {
+    label{
+        margin: 3%;
+    }
+    h1 {
+        font-size: 2.15rem;
+        padding-top: 15%;
+    }
+    h2 {
+        font-size:1.2rem;
+    }
+    #artigo {
+        font-size: 1rem;
+    }
+    .colunm-five {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: auto;
+        float: none;
+        text-align: center;
+    }
+    h3  {
+        line-height: 1.65rem;  
+    }
+
+    #legend {
+        padding:0;
+        
+    }
+} 
+/* Configuração  da responsividade do site: CELULAR TELAS PEQUENAS*/
+@media all and (max-width:375px) {
+    .table1 {
+        width: 100%;
+        margin: auto;
+        transform:translateX(-2.3%)  
+    }
+    h1 {
+        font-size: 2rem;
+        padding-top: 20%;
+    }
+}
+
+@media all and (max-width:374px) {
+    .table1 {
+        width: 100%;
+        margin: auto;
+        transform:translateX(-13%)  
+    }
+    .table2 {
+        width: 100%;
+        margin: auto;
+        transform:translateX(-10%)  
+    }
+
+}
+

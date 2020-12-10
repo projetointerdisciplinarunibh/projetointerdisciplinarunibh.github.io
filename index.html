@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Projeto Interdisciplinar - Engenharia de Minas </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para configurar a responsividade-->
+        <link rel="shortcut icon" href="icon/mining.png" type= ""> <!-- icone na guia do computador-->
+        <link rel="stylesheet" href= "style.css" > <!-- configuração da página -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet"> <!-- Fontes das letras-->
+    </head>
+    
+    <body>
+        <div id=logodiv> <!-- MENU PRINCIPAL-->
+            <header> <!-- CABEÇALHO -->
+                <div id=linklogo> <!-- Logo clicável retorna para a capa do site -->
+                    <a href= "#website-cover">
+                        <img id="logo" src="icon/LogoMakr-0SSrO7.png" alt=" Logo da cartilha"> 
+                    </a>
+                </div>
+                
+                <ul id="menu">
+                    <a id="listamenu" href="#the-project"><li> A CARTILHA </li></a>
+                    <a id="listamenu" href="#barragem"><li> A BARRAGEM </li></a>
+                    <a id="listamenu" href="#sismics"> <li> FONTE SÍSMICA</li></a> 
+                    <a id="listamenu" href="#tests"><li> TESTES </li></a>
+                    <a id="listamenu" href="#understand-more"><li> ENTENDA MAIS </li></a>
+                    <a id="listamenu" href="#about-we"><li>SOBRE NÓS  </li></a>
+                </ul>
+            </header>
+        </div>
+        
+      <div id=menuhamburguerdiv> <!-- Cria as barras do menu hamburguer -->
+            <input type="checkbox" id="check">
+            <label for="check">
+                <div class="menulateral"> 
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        
+            <nav id="menuhamburguer">
+                <a href="#the-project" onclick="document.getElementById('check').checked = false">  A CARTILHA</a>
+                <a href="#barragem" onclick="document.getElementById('check').checked = false"> A BARRAGEM </a>
+                <a href="#sismics" onclick="document.getElementById('check').checked = false"> FONTE SÍSMICA </a>
+                <a href="#tests" onclick="document.getElementById('check').checked = false"> TESTES</a>
+                <a href="#understand-more" onclick="document.getElementById('check').checked = false"> MAIS </a>
+                <a href="#about-we" onclick="document.getElementById('check').checked = false"> SOBRE </a>
+            </nav>
+        </div>
+
+        <div id="website-cover"> <!-- CAPA -->
+            <h1>INFLUÊNCIA DOS DESMONTES POR EXPLOSIVOS NA ESTABILIDADE DAS BARRAGENS A MONTANTE </h1> 
+            <a id= "artigo" href="https://drive.google.com/file/d/1lbTrXqwuMFufufdLl-8Ulh0Y1c5djWoI/view?usp=sharing" target="_blank"> Artigo </a>
+        </div>
+
+        <section id="the-project" class= "margin" > <!-- Seção: A CARTILHA -->
+            <h3> A CARTILHA </h3> <hr>
+
+            <div class= "">
+                
+                <p class= "justify">O estudo de caso relaciona através da análise de dados o risco de rompimento das barragens de contenção de rejeito com a variável sísmica gerada pelos desmontes com explosivos, visto que as ondas love e rayleigh causam o desmoronamento de vários prédios em situação sísmica análoga como os terremotos.</p> 
+                <p class="justify"> Sendo que esta objetiva avaliar a estrutura de barragens a montante durante o processo de detonação de taludes de minas a céu aberto adjacentes, aplicando simulações a fim de classificar os riscos observados, através de um quadro comparativo.
+                </p>
+            </div>
+
+            
+        </section>
+
+        <section id="barragem" class= "margin" > <!-- Seção: BARRAGEM A MONTANTE -->
+            <h3> BARRAGEM A MONTANTE </h3> <hr>
+            <h3> Como funciona?</h3> 
+           
+            <div class= "colunm-two">
+                <p class= "justify"> A etapa de tratamento de minérios tem o objetivo de gerar um produto comercializável, denominado concentrado, mas o processo também gera o rejeito, que é um produto descartável. Visto que, o volume de rejeitos produzido ao final do processo é grande, se torna necessário fazer a disposição dos mesmos, e uma opção para realizar este trabalho é utilização de barragem de rejeitos. (CETEM, 2010, p.831)</p> 
+                <figure> 
+                    <img class= "img-mining" src= "img/amontante.png">
+                </figure>
+            </div>
+        
+            <div class="colunm-two">
+                <p class="justify"> No método à montante, os rejeitos depositados são aproveitados para formar a estrutura de contenção, sendo que a fração mais grossa fica próxima ao maciço e as lamas vão em direção ao reservatório de decantação. Segundo Araújo (2006), inicialmente a execução deste tipo de barragem parte da construção de um dique de partida, este é comumente de material argiloso ou enrocamento compactado. Posteriormente, o rejeito é inserido na barragem na linha de simetria do dique, formando então a praia de deposição, que virará a fundação desta, e eventualmente fornecerá material para a estruturação do próximo alteamento.</p>
+            </div>
+        </section>
+
+        <section id="sismics" class= "margin" > <!-- Seção: FONTE SÍSMICA-->
+            <h3> Fonte Sísmica </h3> <hr>
+        
+            <div class= "colunm-four" class="center" >
+                <img class= "icon"  src="img/blog.desmonte.gif" alt= "Animação de um talude sendo desmontado">
+                <h4> Desmonte por Explosivos </h4>
+                <p class= "center"> Segundo Dorneles (2013), o desmonte com explosivos é o mais utilizado por minimizar os gastos e otimizar os prazos. Porém esse desmonte deve ser controlado e cuidadoso, pois há danos associados ao seu uso que devem ser minimizados ou evitados. Dentre eles as ondas sísmicas ou vibrações, que são geradas no momento que os explosivos são detonados.</p>
+                <p class= "center"> </p>
+            </div>
+        
+            <div class= "colunm-four" class="center"  >
+                <img class= "icon" src="img/SV shear wave vertical.gif" alt="Animação da propagação de uma onda mecânica">
+                <h4> Propagação da Ondas <br> </h4>
+                <p class= "center"> Se tratando do corpo, Nieble (2017), a composição das rochas influencia na maneira que as ondas se propagam no maciço rochoso. Locais com uma litologia mais homogênea tendem a propagar as vibrações com maior facilidade e não modificam a intensidade e a trajetória da onda. Mas em maciços com alto grau de fraturamento, tipos litológicos diferentes e variedade de estruturas geológicas as vibrações terão suas propriedades alteradas ao longo da propagação.
+                </p>
+            </div>
+
+            <div class= "colunm-four" class="center"  >
+                <img class= "icon"  src="img/blog.desmontesoftware.gif" alt="Desenho de uma barragem">
+                <h4> Normas Reguladoras </h4>
+                <div>
+                    <table id="table" id="center" ><!--Inserir a tabela-->
+                     <tr> 
+                         <td>  NBR 9653 </td>
+                         <td> Efeitos provocados pelo uso de explosivos nas minerações em áreas urbanas </td>
+                         
+                     </tr>
+                     <tr> 
+                         <td>  NRM 16 </td>
+                         <td> Operações com Explosivos e Acessórios </td>
+                        
+                     </tr>
+                     <tr> 
+                        <td> Guia de Diretrizes para a Elaboração de Projeto de Barragens </td>  
+                        <td> FS= 1,1; <br>  Kv= 0,03g; <br> Kh= 0,05g <br> Situação sem sismicidade no corpo</td>
+                     </tr>
+                    </table>
+                  </div> 
+           
+            </div> 
+
+            <div class= "colunm-four" class="center" >
+                <img class= "icon" src="img/gif-marketing-digital-para-eventos.gif" alt="Animação de um planejamento">
+                <h4> Parâmetros de Testes </h4>
+                <p class="center"> Analisar o nível de segurança em relação a ruptura, levando em conta a necessidade em adotar medidas de estabilização ou para reavaliar algumas características de projeto, tendo-se assim obras com execução mais seguras e econômicas. </p>
+            </div>
+        </section>
+
+        <section id="tests" class= "margin" > <!-- Seção: TESTES--> 
+            <h3> TESTES </h3> <hr>
+
+            <div class= "colunm-two" class= "center">
+                <p class= "justify"> Os métodos de análise de estabilidade simplificada calculam o fator de segurança de forma fácil e rápida, entretanto, não satisfazem completamente o equilíbrio de força e momento, existindo a possibilidade dos fatores de segurança determinados por esses métodos serem diferentes em comparação aos fatores de segurança definidos pelos métodos que satisfazem completamente a condição de equilíbrio. </p>
+                <div>
+                    <table id="table" id="center" ><!--Inserir a tabela-->
+                     <tr> 
+                         <td> Método </td>
+                         <td> Características </td>
+                     </tr>
+                     <tr> 
+                         <td>  Método de Fellenius </td>
+                         <td> Sueco ou das Fatias; <br> Equilíbrio de momentos;  <br> Conservador;  <br> Seperestimado em 15% compardo ao método de Bishop. </br> </td>
+                     </tr>
+                     <tr> 
+                        <td> Método de Bishop</td>  
+                        <td> Modificação do Método de Fellenius </td>
+                     </tr>
+                     <tr> 
+                        <td> Método de Morgenstern e Price </td>  
+                        <td> Rigoroso; <br> Aplica-se a qualquer superfície de ruptura; <br> Complexo. </td>
+                     </tr>
+                     <tr> 
+                        <td> Método de Spencer </td>  
+                        <td> Rigoroso <br> Satisfaz todas as condições de equilíbrio;<br> Verificação analítica inviável. </td>
+                     </tr>
+                    </table>
+                  </div> 
+
+                <p class= "justify"> Em vista disso, foi utilizado os métodos Bishop Simplificado, Spencer e Morgenstern (GLE), para definir o fator de segurança associado a estabilidade dos taludes da barragem à montante no software Slide. 
+                Para simular uma barragem foram utilizados dois tipos de rejeitos intitulados como Jazida 1 e Jazida 2, com propriedades distintas e valores ilustrativos, além do material da fundação e filtro, demonstrados na tabela abaixo.</p>
+             
+               <div class="table1"  >
+               <table id="table" class="center"><!--Inserir a tabela-->
+                <tr> 
+                    <td> </td>
+                    <td> Jazida 1</td>
+                    <td> Fundação </td>
+                    <td> Filtro </td>
+                    <td> Jazida 2</td>
+                </tr>
+                <tr> 
+                    <td> Peso específico (kN/m³)</td>
+                    <td> 21 </td>
+                    <td> 18 </td>
+                    <td> 17 </td>
+                    <td> 22 </td>
+                </tr>
+                <tr> 
+                    <td> Coesão (kN/m²) </td>
+                    <td> 15 </td>
+                    <td> 10 </td>
+                    <td> 0 </td>
+                    <td> 30 </td>
+                </tr>
+               </table>
+             </div> 
+            
+             <p class= "justify"> A estrutura, exposta abaixo, foi dimensionada no software e representa o dique de partida, com um talude externo de inclinação 2 para 1, com filtros vertical e horizontal com 1 metro de largura. </p>
+
+             <figure class="figure"> 
+                 <figcation> Dimensionamento do talude da barragem modelo </figcation>
+                 <img class= "img-mining" src="img/Dimensões-da-estrutura.jpeg" alt= "Dimensionamento do talude da barragem modelo">
+             </figure>
+
+            <p class="justify"> Inicialmente o maciço foi analisado em condição estática, Kh = 0 e Kv = 0. </p>
+
+            <figure class="figure">
+                <figcation>  Método de Bishop Simplificado </figcation>
+                <img class= "img-mining" src="img/condição-estática.jpeg" alt= "Analise da estabilidade do talude pelo Método de Bishop Simplificado">
+            </figure>
+           
+            <br> <figure class="figure">
+                <figcation>  Método de Morgenstern & Price </figcation>
+                <img class= "img-mining" src="img/mp.jpeg" alt= "Analise da estabilidade do talude pelo Método de Morgenstern & Price" >
+            </figure> </br>
+
+            <figure class="figure">
+                <figcation>  Método de Spencer </figcation>
+                <img class= "img-mining" src="img/spencer.jpeg" alt= "Analise estática do maciço pelo Método de Spencer" >
+            </figure>     
+            </div>   
+            
+            <div class= "colunm-two">  
+            <p class= "justify"> Logo após foi possível obter valores distintos com o uso de Kh= 0,05 e Kv = 0,03. </p>
+
+            <figure class="figure">
+                <figcation>  Método de Bishop Simplificado durante evento sísmico </figcation>
+                <img class= "img-mining" src="img/evento-sismico- bis.jpeg" alt= "Analise da estabilidade do talude do de Bishop Simplificado durante evento sismico" >
+            </figure>  
+
+            <figure class="figure">
+                <figcation>  Método de Morgenstern & Price durante evento sísmico </figcation>
+                <img class= "img-mining" src="img/evento-sismico-MP.jpeg" alt= "Analise da estabilidade do talude pelo Método de Morgenstern & Price durante evento sismico" >
+            </figure> 
+        
+            <p class= "justify"> Ademais, foi observado o efeito da sismicidade em um talude a montante com uma maior inclinação, onde inicialmente era de 27° para 31°. </p>
+
+            <figure class="figure">
+                <figcation>   Método de Bishop Simplificado com talude de maior inclinação </figcation>
+                <img class= "img-mining" src="img/maior-inclinaçao-bishop.jpeg" alt= "Analise da estabilidade do talude pelo Método de Bishop Simplificado com talude de maior inclinação" >
+            </figure> 
+
+            <figure class="figure">
+                <figcation>    Método de Morgenstern & Price com talude de maior inclinação </figcation>
+                <img class= "img-mining" src="img/maior-inclinção.jpeg" alt= "Analise da estabilidade do talude pelo  Método de Morgenstern & Price com talude de maior inclinação" >
+            </figure> 
+
+            <p class="justify">É observável que os valores do fator de segurança diminuíram consideravelmente, entretanto, permanecem dentro da zona aceitável. Além da sismicidade é possível avaliar o maciço com outras variáveis, como a angulação do talude e as propriedades do material, no caso o rejeito. Sendo assim, diversos fatores podem influenciar na estabilidade da barragem, e quando são associados ao fator sísmico gerado pelas detonações, pode levar o talude à ruptura. Fato que pode ser observado na tabela abaixo: </p>
+            
+            <div class= "table2">
+            <table id="table" class="center" ><!--Inserir a tabela-->
+                <tr> 
+                    <td> Situações Problemas </td>
+                    <td>Método de Bishop Simplificado </td>
+                    <td> Método de Morgenstern & Price  </td>
+                </tr>
+                <tr> 
+                    <td> Kh = 0 e Kv = 0</td>
+                    <td>1,726 </td>
+                    <td>1,721 </td>
+                </tr>
+                <tr> 
+                    <td> Kh= 0,05 e Kv = 0,03 </td>
+                    <td> 1,543 </td>
+                    <td> 1,540  </td>
+                </tr>
+                <tr> 
+                    <td> 27° para 31° </td>
+                    <td> 1,333 </td>
+                    <td> 1,329 </td>
+                </tr>
+               </table>
+             </div> 
+
+            <p class= "justify"> Sendo assim, é possível observar, em condição estática (Kh = 0 e Kv = 0), que os métodos de Spencer e Morgenstern & Price obtiveram valores mais conservadores que o método de Bishop Simplificado, com fatores de segurança dentro do normal, ficando acima de 1,5. </p>
+            <p class= "justify">Utilizando Kh = 0,05 e Kv = 0,03, o método de Morgenstern & Price permaneceu com valores mais conservadores e o fator de segurança em ambos diminuiu consideravelmente, mas permaneceu dentro dos parâmetros desejados.</p> 
+            <p class= "justify">  E com uma inclinação maior (27° para 31°) o fator de segurança diminuiu significativamente, entrando em um faixa crítica de estabilidade, mas dentro dos parâmetros estabelecidos pela Agência Nacional das Águas. </p>
+            </div>  
+                            
+        </section>
+
+        <section id= "understand-more" class= "margin" > <!-- Seção: ENTENDA MAIS-->
+            <h3>ENTENDA MAIS</h3> <hr>
+            <p class= "justify">O estudo do impacto do desmonte por explosivos nas barragens de alteamento a montante foi feito através de uma revisão bibliográfica, que permitiu o entendimento dos parâmetros necessários para realização dos testes e escolha dos métodos de análise. Então, estes fatores foram apontados juntamente com as variáveis envolvidas, possibilitando a execução de um estudo no software Slide Rocscience para o cálculo da estabilidade, em seguida foi feita a elaboração de uma cartilha com as informações e resultados obtidos.
+            A partir da análise realizada o que se pode concluir é que apesar do fator de segurança das barragens ser afetado pelas vibrações geradas pelo desmonte, tendo de certa forma uma influência na estabilidade dos taludes que compõem o barramento, estas não podem ser consideradas como a causa do rompimento de barragens a montante. Além dos coeficientes sísmicos gerados, fatores como inclinação do talude e composição do rejeito devem ser observados, pois estão diretamente relacionados com a estabilidade.
+            Portanto, todas as condições citadas devem ser avaliadas, buscando se fazer um desmonte controlado de modo que a estrutura da barragem não seja afetada de maneira significativa. </p>
+            </div>
+        </section>
+
+        <section id= "about-we" class= "margin" > <!-- Seção: SOBRE NÓS-->
+            <h3> SOBRE NÓS</h3> <hr>
+        
+            <div class= "colunm-five"> 
+                <img class= "img-about-we" src="img/Alice.jpg">
+                <h5 class= "about-we-title"> Alice Rodrigues Bento</h5>
+                <p class= "about-we-text"> 22 anos. Graduanda em Engenharia de Minas </p>
+            </div>
+            <div class= "colunm-five"> 
+                <img class= "img-about-we" src="img/Camila.jpeg">
+                <h5 class= "about-we-title"> Camila Ramos Araújo </h5>
+                <p class= "about-we-text">21 anos. Graduanda em Engenharia de Minas </p>
+            </div>
+            <div class= "colunm-five"> 
+                <img class= "img-about-we" src="img/Maria.jpeg">
+                <h5 class= "about-we-title"> Maria‌ ‌Eduarda‌ ‌R. ‌A. ‌Campos‌ </h5>
+                <p class= "about-we-text">21 anos. Graduanda em Engenharia de Minas</p>
+            </div>
+            <div class= "colunm-five"> 
+                <img class= "img-about-we" src="img/Raissa.jpeg">
+                <h5 class= "about-we-title"> Rais‌sa de Oliveira Sobral </h5>
+                <p class= "about-we-text">21 anos. Graduanda em Engenharia de Minas </p>
+            </div>
+            <div class= "colunm-five"> 
+                <img class= "img-about-we" src="img/Rita.jpeg">
+                <h5 class= "about-we-title"> Rita‌ ‌Luara‌ ‌Pereira‌ ‌de‌ ‌Souza‌ </h5>
+                <p class= "about-we-text">22 anos. Graduanda em Engenharia de Minas </p>
+            </div>
+        </section>
+
+        <footer> <!-- RODA PÉ-->
+            <div class= "">
+                <h4> A Cartilha </h4>
+                <p class= "justify" > A presente cartilha é produto do Estudo da Influência dos Desmontes por Explosivos na Estabilidade das Barragens a Montante, na disciplina de Projeto Interdisciplinar da turma de Engenharia de Minas, do Centro Universitário de Belo Horizonte - UniBH. </p>
+                <p class="data">© 2020</p>
+            </div>
+        </footer>
+    </body>
+</html>
